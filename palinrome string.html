@@ -8,18 +8,36 @@
 </head>
 <body>
 		<script>
-			let n=prompt("Palindrom")
-		let nee=[]
+		var n=prompt("Palindrom")
+		var word=[]
 		for(i=n.length-1;i>=0;i--){
-			nee+=n[i]
+			word+=n[i]
 			
 		}
-		if(n==nee){
-		 console.log(nee)		
+		if(n==word){
+		 console.log("palindrome")		
 			}
 		else{
 		console.log("not palindrome")
 		}
+		
+		
+		
+			var a=parseInt(prompt("Enter your numner"));
+			var b=0;
+			var value=a;
+			while(a>0){
+				Rem=a%10;
+				a=(a-Rem)/10;
+				b=(b*10)+Rem;
+			}
+			if(b==value){
+				console.log("palindrome");
+			}
+			else{
+				console.log("not palindrome ");
+			}
+			
 		</script>
 </body>
 </html>
